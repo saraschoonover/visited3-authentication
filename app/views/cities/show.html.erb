@@ -1,0 +1,45 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="banner-city-show d-flex justify-content-center align-items-center flex-column" style="height: 1000px;">
+    <div class="list d-flex justify-content-center align-items-center flex-column">
+      <h2 class="bannerWishlistSubtitleShow">Where would you like to go?</h2>
+      <p class="leadWishlistShow">Edit A City To Add A City To Your Collection</p>
+    </div>
+  </div>
+</div>
+
+<div class="city-con d-flex justify-content-center align-items-center flex-column">
+<div class="city-container d-flex justify-content-center align-items-center flex-wrap">
+
+      <div class="card d-flex justify-content-center align-items-center" style="width: 23rem;  height: 30rem;">
+         <h5 class="card-title mb-3"><%= @city.name %></h5>
+         <h6 class="card-subtitle mb-2 text-muted">Country: <%= @city.country %></h6>
+         <h6 class="p text-muted">Continent: <%= @city.continent %></h6>
+         <h6 class="p text-muted">Neighborhoods: <%= @city.neighborhood_name %></h6>
+         <h6 class="p text-muted">Parks: <%= @city.park_name %></h6>
+         <h6 class="p text-muted">Coffee Shops: <%= @city.coffeeshop_name %></h6>
+         <h6 class="p text-muted">Restaurants: <%= @city.restaurant_name %></h6>
+          <div class="show-cities-btns d-flex justify-content-center align-items-center">
+          <div class="delete-btn p-3">
+            <%= link_to city_path(@city),
+            data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do
+          %>
+            <i class="fa-solid fa-trash-can"></i>
+          <% end %>
+          </div>
+          <div class="edit-btn">
+          <%= link_to edit_city_path(@city) do %>
+            <i class="fa-regular fa-pen-to-square"></i>
+            <% end %>
+          </div>
+          </div>
+
+  </div>
+
+
+
+</div>
+<div class="index-btns d-flex justify-content-center align-items-center">
+  <div>
+     <%= link_to "Back to Cities", cities_index_path(@cities) %>
+  </div>
+</div>

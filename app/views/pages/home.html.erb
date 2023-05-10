@@ -1,2 +1,16 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+ <div class="banner d-flex justify-content-center align-items-center flex-column" style="height: 900px;">
+
+    <div class="list d-flex justify-content-center align-items-center flex-column">
+      <h2 class="bannerSubtitle">Where have you been?</h2>
+      <p class="lead">Keep track of where in the world you've been and where you'd like to go.</p>
+       <div class="homepagebuttons">
+        <% if current_user %>
+          <%= link_to "My trips", "cities/index", class: "btn btn-warning btn-lg btn-seecities" %>
+        <% else %>
+          <%= link_to "Get started!", new_user_session_path, class: "btn btn-warning btn-lg btn-seecities" %>
+          <!-- <%= link_to "Sign up", new_user_registration_path, class: "btn loginlandingpage2" %> -->
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

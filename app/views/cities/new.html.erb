@@ -1,0 +1,62 @@
+<div class="jumbotron jumbotron-fluid">
+  <div class="banner-city-show d-flex justify-content-center align-items-center flex-column" style="height: 1000px;">
+    <div class="list d-flex justify-content-center align-items-center flex-column">
+      <h2 class="bannerWishlistSubtitleShow p-3">Add A City To Your List</h2>
+    </div>
+  </div>
+</div>
+
+<div class="form-new d-flex justify-content-center align-items-center pt-5">
+<div class="form-con">
+<%= form_with model: @city do |f| %>
+  <div class="new-country-card">
+  <div class="new-card-body">
+
+    <div class="mb-3">
+      <%= f.label :name, { class: "form-label"} %>
+      <%= f.text_field :name, { class: "form-control", placeholder: "Name" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :country, { class: "form-label"} %>
+      <%= f.text_field :country, { class: "form-control", placeholder: "Country" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :continent, { class: "form-label"} %>
+      <%= f.text_field :continent, { class: "form-control", placeholder: "Continent" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :parks, { class: "form-label"} %>
+      <%= f.text_field :parks, { class: "form-control", placeholder: "Park Name" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :neighborhoods, { class: "form-label"} %>
+      <%= f.text_field :neighborhoods, { class: "form-control", placeholder: "Neighborhoods" } %>
+    </div>
+
+    <div class="mb-3">
+      <%= f.label :coffee_shops, { class: "form-label"} %>
+      <%= f.text_field :coffee_shops, { class: "form-control", placeholder: "Coffee Shops" } %>
+    </div>
+
+    <div class="mb-4">
+      <%= f.label :restaurants, { class: "form-label"} %>
+      <%= f.text_field :restaurants, { class: "form-control", placeholder: "Restaurants" } %>
+    </div>
+
+    <%= f.submit "Submit", class: "button-74" %>
+
+  </div>
+</div>
+<% end %>
+
+</div>
+</div>
+
+<div class="new-form d-flex justify-content-center align-items-center">
+<%= link_to "Back to home", root_path %>
+</div>
+</div>

@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+// .city-container {
+//   margin-bottom: 20px;
+// }
+
+.card {
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNpbXBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+ // color: white;
+  //border: 0.5px solid rgb(189, 186, 186);
+  //background-size: cover;
+ padding: 10px;
+ margin: 15px;
+ height: 300px;
+ width: 250px;
+ box-shadow: 0px 0px 5px rgb(230, 230, 230);
+ opacity: 1;
+
+}
+
+.card-show {
+  //background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1428908728789-d2de25dbd4e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fHNpbXBsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+ // color: white;
+  //border: 0.5px solid rgb(189, 186, 186);
+  //background-size: cover;
+ padding: 10px;
+ margin: 15px;
+ height: 300px;
+ width: 250px;
+ box-shadow: 0px 0px 5px rgb(230, 230, 230);
+ opacity: 1;
+
+}
+
+.card-city-index {
+  padding: 10px;
+ margin: 50px;
+ height: 300px;
+ width: 200px;
+ box-shadow: 0px 0px 5px rgb(230, 230, 230);
+ opacity: 1;
+}
+
+.cities-heading {
+  margin: 30px;
+}
+
+.icon {
+  font-size: 3.5em;
+  margin-top: 20px;
+}
+
+.card-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+}
+
+.wishlist-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 150px;
+}
+
+.wishlist-con {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.city-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}

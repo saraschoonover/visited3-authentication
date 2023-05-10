@@ -1,0 +1,28 @@
+.form-new {
+  //margin: 100px;
+display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 100px;
+}
+
+.heading-form {
+  margin-top: 50px;
+}
+
+body {
+ // background-color: #e1c05f;
+ margin: 50;
+}
+
+.heading-form-city-add {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1531012451721-432c0ae74527?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGZ1bnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60");
+  background-size: cover;
+
+ float: left;
+ text-align: center;
+}
+
+.form-label{
+  font-weight: 900;
+}
