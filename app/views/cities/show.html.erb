@@ -14,10 +14,10 @@
          <h5 class="card-title mb-3"><%= @city.name %></h5>
          <h6 class="card-subtitle mb-2 text-muted">Country: <%= @city.country %></h6>
          <h6 class="p text-muted">Continent: <%= @city.continent %></h6>
-         <h6 class="p text-muted">Neighborhoods: <%= @city.neighborhood_name %></h6>
-         <h6 class="p text-muted">Parks: <%= @city.park_name %></h6>
-         <h6 class="p text-muted">Coffee Shops: <%= @city.coffeeshop_name %></h6>
-         <h6 class="p text-muted">Restaurants: <%= @city.restaurant_name %></h6>
+         <h6 class="p text-muted">Neighborhoods: <%= @city.neighborhoods %></h6>
+         <h6 class="p text-muted">Parks: <%= @city.parks %></h6>
+         <h6 class="p text-muted">Coffee Shops: <%= @city.coffee_shops %></h6>
+         <h6 class="p text-muted">Restaurants: <%= @city.restaurants %></h6>
           <div class="show-cities-btns d-flex justify-content-center align-items-center">
           <div class="delete-btn p-3">
             <%= link_to city_path(@city),

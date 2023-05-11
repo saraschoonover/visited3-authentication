@@ -1,5 +1,5 @@
 class CitiesController < ApplicationController
-  before_action :set_user, only: [:new, :create]
+  #before_action :set_user, only: [:new, :create]
 
   def index
     @cities = City.where(user_id: current_user.id)
@@ -42,7 +42,7 @@ class CitiesController < ApplicationController
   private
 
   def city_params
-    params.require(:city).permit(:name, :country, :continent, :neighborhood_name, :park_name, :coffeeshop_name, :string, :restaurant_name)
+    params.require(:city).permit(:name, :country, :continent, :neighborhood_name, :park_name, :coffeeshop_name, :string, :restaurant_name, :id)
   end
 
   def set_cities
@@ -51,6 +51,7 @@ class CitiesController < ApplicationController
 
 
   def set_user
+   # raise
     @user = User.find(params[:id])
   end
 

@@ -8,7 +8,9 @@ class CreateCities < ActiveRecord::Migration[7.0]
       t.string :coffee_shops
       t.string :neighborhoods
       t.string :parks
-      t.references :user, null: false, foreign_key: true
+      t.string :id
+      #t.references :users, null: false, foreign_key: true
+      t.belongs_to :user, index: true
 
       t.timestamps
     end
