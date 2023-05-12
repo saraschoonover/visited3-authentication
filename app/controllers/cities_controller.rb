@@ -4,6 +4,13 @@ class CitiesController < ApplicationController
   def index
     @cities = City.where(user_id: current_user.id)
     @cities = City.all.order(country: :asc)
+
+    @markers = @cities.geocoded.map do |city|
+      {
+        lat: city.latitude,
+        lng: city.longitude
+      }
+    end
   end
 
   def show
